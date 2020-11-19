@@ -1,0 +1,135 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+    
+  }
+
+html{
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Kumbh Sans' , sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    
+    overflow: hidden;
+}
+
+section{
+   text-align: center;
+    z-index: 1;
+    width: 27rem;
+    height: 30rem;
+    box-shadow: 0px 5px 50px hsla(229, 23%, 23%);
+    border-radius: 1.5rem;
+    
+}
+.bumpUp{
+    margin-top:-3rem;
+}
+
+/* profile card styles */
+.card{    
+    padding-top: 11rem;
+    text-align: center;
+    font-size: 1.6rem;
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: url(/images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: contain;    
+}
+
+.profileDetails{
+    padding-top:1.25rem;
+    padding-bottom: 1.2rem;
+}
+
+.card img{
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: visible;
+}
+
+.cardName {
+    text-align: center;
+    color: hsl(227, 10%, 46%);
+    
+}
+
+.cardName p{
+    font-size: 1.1rem;
+    display: inline;
+}
+
+.cardName h1 {
+    font-size: 1.4rem;
+    color: hsl(229, 23%, 23%);
+    display: inline;
+}
+
+.cardGeoLocation {
+    font-size: 1rem;
+    color: hsl(227, 10%, 46%);
+}
+
+.profile-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1px;
+    border-top: 1.5px solid hsla(0, 0%, 59%, 20%);
+}
+
+.stat{
+    display: flex;  
+    text-align: center;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin: 0px; 
+    padding-top: 25px; 
+    color: hsl(229, 23%, 23%);
+    
+}
+
+.label{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: .7rem;
+    letter-spacing: 2px;
+    color: hsl(227, 10%, 46%);
+    margin:0px;
+    padding-top: 5px;
+}
+
+/* Backgrounds */
+
+.bg-top {
+    background: url("./images/bg-pattern-top.svg");
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 58rem;
+    height: 58rem;
+    position: absolute;
+    top:3rem;
+    left: 20rem;
+    
+  }
+  .bg-bottom {
+    background: url("./images/bg-pattern-bottom.svg");
+    bottom: -3rem;
+    right: 20rem;
+    transform: translate(50%, 50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 58rem;
+    height: 58rem;
+    position: absolute;  
+    
+  }
